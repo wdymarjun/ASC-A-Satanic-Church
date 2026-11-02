@@ -24,7 +24,7 @@ body {
 /* Subtle gothic background pattern using pure CSS (no image files) */
 .gothic-bg {
   background-color: #070608;
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 0%, rgba(139, 24, 24, 0.08) 0%, transparent 60%),
     radial-gradient(circle at 10% 30%, rgba(26, 22, 33, 0.4) 0%, transparent 40%),
     radial-gradient(circle at 90% 70%, rgba(26, 22, 33, 0.4) 0%, transparent 40%);
@@ -43,20 +43,26 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #0d0c10;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #2b2533;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #8b1818;
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+
+  *,
+  ::before,
+  ::after {
     animation-delay: -1ms !important;
     animation-duration: 1ms !important;
     animation-iteration-count: 1 !important;

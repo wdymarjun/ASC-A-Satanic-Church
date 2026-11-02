@@ -102,3 +102,4 @@ ASC-A-Satanic-Church/
 All doctrines, tomes, rituals, and characters featured on this website and in the game are fictional works created solely for roleplay, storytelling, and architectural exploration within the Roblox platform.
 
 This project is an independent creative endeavor and is not affiliated with, endorsed by, or associated with any real-world religious, political, or external organizations.
+
