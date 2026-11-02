@@ -1,105 +1,67 @@
-# ASC — A Satanic Church (Website)
+# ASC — A Satanic Church
 
-Official informational and architectural showcase website for **ASC — A Satanic Church**, an immersive Gothic cathedral and occult roleplay experience built on Roblox by **kingpaimon2**.
+An editorial showcase for the Roblox experience **ASC — A Satanic Church**.
+The site introduces the cathedral, surrounding environments, in-game archive,
+named characters, and selected systems documented in a scan of the place.
 
----
+Play the experience:
+https://www.roblox.com/games/91131584470075/ASC-A-Satanic-Church
 
-## 🏛️ About the Experience
+## About the site
 
-**ASC — A Satanic Church** is a monumental gothic simulation featuring over **164,153 individual instances** meticulously designed and managed via the Rojo 7.7.0 development pipeline.
+The landing page is built with Next.js App Router, React, TypeScript, and
+Tailwind CSS. Its visual direction uses original ASC imagery and a restrained
+Gothic palette with wine, blood-red, and gold accents. Subtle scroll reveals
+respect reduced-motion preferences.
 
-Key in-game highlights:
-- **The Gothic Cathedral (`UltimateSingleHallGothic`):** Soaring rib-vaulted ceiling, compound colonnades, flying buttresses, triple-portal narthex, and the great rose window.
-- **The High Altar Stage:** 102 skull candelabras powered by a real-time candle flame flickering engine (`flickers.server.luau`).
-- **The Grand Pipe Organ (`Organ1`):** A massive gothic instrument modeled with over 10,075 individual parts.
-- **The Great Occult Library:** Multi-tiered archive with 100 interaction prompts, stealth concealment wardrobes, and 6 authored grimoires (*The Infernal Codex of Arcana*, *Litany of Great King Paimon*, *Blood & Sulfur: Rites of the Altar*, *Vigilance of the Sentinels*, *The Salt of the Damned*, and *The Satanic Bible*).
-- **Autonomous In-Game Entities:** Guided tours led by the pathfinding **Tour Lady**, conversational knowledge from the **Grand Archivist**, and autonomous prayer cycles from **ik you** with studio-quality voice clips.
-- **Rank Progression Hierarchy:** Formal 10-hour advancement from *Lost Soul* to *Blood Covenant*, with the exclusive *DEMON* admin rank.
+The `public/images/gameplay/` directory contains optimized WebP versions of
+creator-supplied Roblox screenshots. The homepage uses a dramatic cathedral
+hero and a small set of large editorial scene features rather than leading
+with a screenshot grid. The cathedral section follows the new screenshots
+from the torch-lit courtyard and exterior through the nave, overlook,
+sanctuary, and posted conduct rules. The education hall includes its
+council-only teaching stage and the Bible used by educators and priests. The
+Grand Library section features its aisle, pavilion, librarian, book display,
+and visitor. An unusable 2×1 image and exact duplicates were excluded.
 
-Experience Link: [Play ASC on Roblox](https://www.roblox.com/games/91131584470075/ASC-A-Satanic-Church)
+Content is intentionally limited to details supported by the scanned place.
+Instance totals, unverified gameplay promises, and private moderation logic
+are not presented as website facts. The page links to the Roblox experience
+and the supplied ASC Discord invite.
 
----
+## Run locally
 
-## 🛠️ Technology Stack
+Requires Node.js 18.18 or newer.
 
-- **Framework:** [Next.js](https://nextjs.org/) (App Router, React 19)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS (Custom gothic obsidian, crimson, and gold design system)
-- **Typography:** Cinzel (Serif display) & Inter (Sans-serif body) via `next/font/google`
-- **Icons:** [Lucide React](https://lucide.dev/)
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v18.18.0 or newer)
-- npm or pnpm
-
-### Installation
 ```bash
-# Clone the repository
-git clone https://github.com/wdymarjun/ASC-A-Satanic-Church.git
-
-# Enter the project directory
-cd ASC-A-Satanic-Church
-
-# Install dependencies
 npm install
-```
-
-### Development Server
-```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-### Production Build
+Open http://localhost:3000.
+
+Create and run a production build:
+
 ```bash
-# Create an optimized production build
 npm run build
-
-# Start the production server
 npm run start
 ```
 
----
+## Project structure
 
-## 📁 Project Architecture
-
-```
-ASC-A-Satanic-Church/
-├── public/
-│   └── images/               # Authentic in-game screenshots and renders
-│       ├── cathedral-nave.png
-│       ├── cathedral-preview.jpg
-│       ├── archivist-dialog.jpg
-│       └── archivist-educator.jpg
-├── src/
-│   ├── app/
-│   │   ├── globals.css       # Theme variables, gothic styles, no background photos
-│   │   ├── layout.tsx        # Fonts and metadata
-│   │   └── page.tsx          # Main landing page
-│   └── components/
-│       ├── Navbar.tsx        # Wordmark, section links, Roblox CTA
-│       ├── Hero.tsx          # Editorial title, verified scan statistics
-│       ├── WorldSection.tsx  # Cathedral architecture and spatial map
-│       ├── ArchiveSection.tsx# Interactive grimoire reader (6 tomes)
-│       ├── CharactersSection.tsx # Archivist, Tour Lady, ik you, Sentinels
-│       ├── SystemsSection.tsx# 9 Sanctuary Decrees & Rank calculator
-│       ├── EasterEggSection.tsx # Courtyard McDonald's & Treehouse lore
-│       └── Footer.tsx        # Roblox button, legal, independent disclaimer
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── README.md
+```text
+src/
+  app/
+    globals.css       Design system and responsive layout
+    layout.tsx        Root layout and metadata
+    page.tsx          Landing page route
+  components/
+    GameGallery.tsx   Optional filterable in-game photo gallery
+    Showcase.tsx      Navigation and editorial showcase sections
+public/
+  images/
+    gameplay/         Optimized Roblox screenshots
 ```
 
----
-
-## 📜 Disclaimer
-
-All doctrines, tomes, rituals, and characters featured on this website and in the game are fictional works created solely for roleplay, storytelling, and architectural exploration within the Roblox platform.
-
-This project is an independent creative endeavor and is not affiliated with, endorsed by, or associated with any real-world religious, political, or external organizations.
-
+The site is an independent fan-made showcase and is not affiliated with or
+endorsed by Roblox or any real-world religious or political organization.

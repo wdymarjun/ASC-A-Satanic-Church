@@ -2,29 +2,32 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ASC — A Satanic Church | Roblox Gothic Experience",
+  title: "ASC — A Satanic Church",
   description:
-    "An monumental Gothic cathedral and occult sanctuary created in Roblox by kingpaimon2. Explore 164,153 handcrafted architectural instances, the Great Occult Library, interactive tomes, and autonomous entities.",
+    "Explore ASC — A Satanic Church, a Gothic Roblox experience by kingpaimon2, featuring a monumental cathedral, archive, characters, and surrounding grounds.",
   keywords: [
     "ASC",
     "A Satanic Church",
     "Roblox Gothic Game",
-    "Roblox Cathedral",
+    "Roblox cathedral",
     "kingpaimon2",
-    "Occult Library",
-    "Gothic Architecture Roblox"
+    "Gothic architecture",
   ],
   authors: [{ name: "kingpaimon2" }],
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/asc-main-icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/asc-main-icon.png",
+  },
   openGraph: {
     title: "ASC — A Satanic Church",
-    description: "Monumental Gothic cathedral, occult library, and liturgical roleplay experience on Roblox.",
-    url: "https://www.roblox.com/games/91131584470075/ASC-A-Satanic-Church",
+    description:
+      "A Gothic Roblox experience of vaulted stone, candlelight, and stories waiting in the archive.",
     siteName: "ASC — A Satanic Church",
     type: "website",
     locale: "en_US",
-  },
-  icons: {
-    icon: "/favicon.ico",
   },
 };
 
@@ -35,9 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="antialiased bg-sanctum-950 text-sanctum-bone selection:bg-sanctum-crimson selection:text-white font-sans">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
